@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة المقررات الأكاديمية | المحاضر /سعد بن صالح العمري</title>
+    <meta name="description" content="البوابة الأكاديمية والملف التعريفي - المحاضر /سعد بن صالح العمري - جامعة الطائف. منصات المقررات التفاعلية، بنوك الأسئلة، والأكواد البرمجية.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Font: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Navigation -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50 border-b border-slate-800 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center text-white font-black text-lg shadow-sm">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-base sm:text-lg leading-tight text-white">بوابة المقررات الأكاديمية</h1>
+                    <p class="text-xs text-slate-400">المحاضر /سعد بن صالح العمري | جامعة الطائف</p>
+                </div>
+            </div>
+
+            <!-- Contact Quick Access -->
+            <div class="flex items-center space-x-2 space-x-reverse">
+                <a href="https://t.me/saadsa85" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-sky-500/15 hover:bg-sky-500/25 border border-sky-400/30 text-sky-300 hover:text-sky-200 text-xs font-bold rounded-lg transition"
+                   title="تواصل عبر تليجرام">
+                    <i class="fa-brands fa-telegram text-sm text-sky-400"></i>
+                    <span class="hidden sm:inline">تليجرام:</span>
+                    <span dir="ltr">@saadsa85</span>
+                </a>
+                <a href="mailto:saad_1406@hotmail.com"
+                   class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-400/30 text-emerald-300 hover:text-emerald-200 text-xs font-bold rounded-lg transition"
+                   title="تواصل عبر البريد الأكاديمي">
+                    <i class="fa-solid fa-envelope text-sm text-emerald-400"></i>
+                    <span dir="ltr">saad_1406@hotmail.com</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile & Hero Section -->
+    <section class="bg-gradient-to-b from-slate-900 via-slate-850 to-slate-900 text-white py-10 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+        <div class="max-w-5xl mx-auto">
+            <div class="bg-slate-800/80 border border-slate-700/80 rounded-2xl p-6 sm:p-8 backdrop-blur-sm shadow-xl flex flex-col md:flex-row items-center md:items-start gap-6">
+                <!-- Avatar & Status -->
+                <div class="relative shrink-0">
+                    <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-400 p-1 shadow-lg shadow-emerald-900/30">
+                        <div class="w-full h-full bg-slate-900 rounded-xl flex flex-col items-center justify-center text-white">
+                            <i class="fa-solid fa-user-tie text-3xl sm:text-4xl text-emerald-400 mb-1"></i>
+                            <span class="text-[10px] font-bold text-slate-400">SAAD ALAMRI</span>
+                        </div>
+                    </div>
+                    <span class="absolute -bottom-2 -left-2 bg-emerald-500 text-slate-950 font-black text-[10px] px-2 py-0.5 rounded-full border-2 border-slate-900 flex items-center gap-1 shadow">
+                        <span class="w-1.5 h-1.5 rounded-full bg-slate-950 animate-pulse"></span> متاح أكاديمياً
+                    </span>
+                </div>
+
+                <!-- Bio & Faculty Info -->
+                <div class="flex-grow text-center md:text-right">
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 mb-2">
+                        <h2 class="text-2xl sm:text-3xl font-black text-white">المحاضر /سعد بن صالح العمري</h2>
+                        <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2.5 py-0.5 rounded-md font-semibold">عضو هيئة تدريس</span>
+                        <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-0.5 rounded-md font-medium">جامعة الطائف</span>
+                    </div>
+
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4 max-w-3xl">
+                        أهلاً بكم في البوابة الأكاديمية الشاملة. نوفر هنا بوابات تعليمية تفاعلية لكل مقرر دراسي تشمل الشروحات، الأكواد البرمجية، بنوك الأسئلة، والمتابعة المباشرة لمستوى الطلاب.
+                    </p>
+
+                    <!-- Contact Badges -->
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-2.5 text-xs">
+                        <!-- Telegram Direct -->
+                        <a href="https://t.me/saadsa85" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-1.5 px-3.5 py-2 bg-sky-500 hover:bg-sky-600 text-white font-bold rounded-xl transition shadow-sm">
+                            <i class="fa-brands fa-telegram text-base"></i>
+                            <span>تليجرام: <span dir="ltr">@saadsa85</span></span>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:saad_1406@hotmail.com"
+                           class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl transition shadow-sm">
+                            <i class="fa-solid fa-envelope text-white"></i>
+                            <span>البريد الأكاديمي: <span dir="ltr">saad_1406@hotmail.com</span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search & Filters -->
+            <div class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+                <!-- Search Box -->
+                <div class="relative flex-grow max-w-md">
+                    <span class="absolute inset-y-0 right-0 flex items-center pr-3.5 pointer-events-none text-slate-400">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="text" id="searchInput" placeholder="ابحث باسم المقرر، الرمز، أو الكلمات المفتاحية..."
+                        class="w-full pr-10 pl-4 py-2.5 bg-slate-800/90 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition shadow-inner">
+                </div>
+
+                <!-- Stats Counters -->
+                <div class="flex items-center justify-end gap-3 text-xs text-slate-300">
+                    <div class="px-3 py-2 bg-slate-800 border border-slate-700 rounded-xl flex items-center gap-2">
+                        <i class="fa-solid fa-book-bookmark text-emerald-400"></i>
+                        <span>إجمالي المقررات: <strong class="text-white text-sm" id="courseCount">7</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow w-full">
+
+        <!-- Category Filters -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-8 no-scrollbar" id="categoryFilters">
+            <button onclick="filterCategory('all')" data-cat="all" class="cat-btn active whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-900 text-white shadow-sm transition">
+                <i class="fa-solid fa-layer-group ml-1.5"></i> جميع المقررات (7)
+            </button>
+            <button onclick="filterCategory('programming')" data-cat="programming" class="cat-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition">
+                <i class="fa-solid fa-code ml-1.5 text-emerald-600"></i> البرمجة وهياكل البيانات (3)
+            </button>
+            <button onclick="filterCategory('systems')" data-cat="systems" class="cat-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition">
+                <i class="fa-solid fa-server ml-1.5 text-blue-600"></i> الأنظمة والشبكات (2)
+            </button>
+            <button onclick="filterCategory('data')" data-cat="data" class="cat-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition">
+                <i class="fa-solid fa-database ml-1.5 text-teal-600"></i> قواعد البيانات و UX (2)
+            </button>
+        </div>
+
+        <!-- Courses Grid -->
+        <div id="coursesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Course 1: برمجة الحاسب -->
+            <div class="course-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden group hover:border-emerald-500" data-category="programming" data-keywords="برمجة الحاسب computer programming cp101 cpp python متغيرات دوال">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-lg flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> CP-101
+                        </span>
+                        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg group-hover:bg-emerald-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-emerald-700 transition">برمجة الحاسب</h3>
+                    <p class="text-xs text-slate-400 font-medium mb-3" dir="ltr">Computer Programming</p>
+
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        مفاهيم البرمجة الأساسية، المتغيرات، الدوال، وهياكل التحكم الأولية لبناء أساس برمجي صلب واكتساب التفكير المنطقي.
+                    </p>
+
+                    <div class="flex flex-wrap gap-1.5 mb-2">
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">أساسيات البرمجة</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">جمل التحكم</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">الدوال والمصفوفات</span>
+                    </div>
+                </div>
+
+                <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+                    <span class="text-xs text-emerald-600 font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-circle-check text-[10px]"></i> منصة تفاعلية
+                    </span>
+                    <a href="https://saadalam-077.github.io/com_prog/" target="_blank" rel="noopener noreferrer"
+                       class="text-xs sm:text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 px-3.5 py-2 rounded-xl transition shadow-sm flex items-center gap-1.5">
+                        <span>دخول المقرر</span>
+                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Course 2: البرمجة الشيئية -->
+            <div class="course-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden group hover:border-blue-500" data-category="programming" data-keywords="البرمجة الشيئية oop object oriented programming كائنات وراثة classes inheritance">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-lg flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span> OOP-201
+                        </span>
+                        <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg group-hover:bg-blue-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-blue-700 transition">البرمجة الشيئية</h3>
+                    <p class="text-xs text-slate-400 font-medium mb-3" dir="ltr">Object-Oriented Programming (OOP)</p>
+
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        دروس وتطبيقات عملية حول الفئات (Classes)، الكائنات (Objects)، الوراثة، التغليف، وتعدد الأشكال البرمجية.
+                    </p>
+
+                    <div class="flex flex-wrap gap-1.5 mb-2">
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Classes & Objects</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">الوراثة والتغليف</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Polymorphism</span>
+                    </div>
+                </div>
+
+                <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+                    <span class="text-xs text-blue-600 font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-circle-check text-[10px]"></i> منصة تفاعلية
+                    </span>
+                    <a href="https://saadalam-077.github.io/oop/" target="_blank" rel="noopener noreferrer"
+                       class="text-xs sm:text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 px-3.5 py-2 rounded-xl transition shadow-sm flex items-center gap-1.5">
+                        <span>دخول المقرر</span>
+                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Course 3: هياكل البيانات -->
+            <div class="course-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden group hover:border-indigo-500" data-category="programming" data-keywords="هياكل البيانات data structures ds202 مكدس طابور اشجار linked list stack queue tree">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-bold text-indigo-700 bg-indigo-50 border border-indigo-200 px-2.5 py-1 rounded-lg flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span> DS-202
+                        </span>
+                        <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg group-hover:bg-indigo-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-indigo-700 transition">هياكل البيانات</h3>
+                    <p class="text-xs text-slate-400 font-medium mb-3" dir="ltr">Data Structures</p>
+
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        أمثلة وأكواد عملية لتنظيم وتخزين البيانات بكفاءة: القوائم المترابطة، المكدسات، الصفوف، الأشجار، والرسوم البيانية.
+                    </p>
+
+                    <div class="flex flex-wrap gap-1.5 mb-2">
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Linked Lists & Stacks</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Binary Trees</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Sorting & Search</span>
+                    </div>
+                </div>
+
+                <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+                    <span class="text-xs text-indigo-600 font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-circle-check text-[10px]"></i> منصة تفاعلية
+                    </span>
+                    <a href="https://saadalam-077.github.io/data_struc/" target="_blank" rel="noopener noreferrer"
+                       class="text-xs sm:text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-700 px-3.5 py-2 rounded-xl transition shadow-sm flex items-center gap-1.5">
+                        <span>دخول المقرر</span>
+                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Course 4: إدارة الأنظمة -->
+            <div class="course-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden group hover:border-amber-500" data-category="systems" data-keywords="إدارة الأنظمة system administration sysadmin linux سيرفرات باش bash صلاحيات">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-bold text-amber-700 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-lg flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> SYS-301
+                        </span>
+                        <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg group-hover:bg-amber-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-amber-700 transition">إدارة الأنظمة</h3>
+                    <p class="text-xs text-slate-400 font-medium mb-3" dir="ltr">System Administration</p>
+
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        إدارة السيرفرات، سطر أوامر لينكس (Bash)، إدارة الصلاحيات للمستخدمين، ومراقبة أداء الشبكات والبنية التحتية.
+                    </p>
+
+                    <div class="flex flex-wrap gap-1.5 mb-2">
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Linux CLI & Bash</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">صلاحيات المستخدمين</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">إدارة السيرفرات</span>
+                    </div>
+                </div>
+
+                <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+                    <span class="text-xs text-amber-600 font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-circle-check text-[10px]"></i> منصة تفاعلية
+                    </span>
+                    <a href="https://saadalam-077.github.io/sysadmin-course/" target="_blank" rel="noopener noreferrer"
+                       class="text-xs sm:text-sm font-bold text-white bg-amber-600 hover:bg-amber-700 px-3.5 py-2 rounded-xl transition shadow-sm flex items-center gap-1.5">
+                        <span>دخول المقرر</span>
+                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Course 5: أساسيات قواعد البيانات -->
+            <div class="course-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden group hover:border-teal-500" data-category="data" data-keywords="أساسيات قواعد البيانات database fundamentals sql erd جداول تطبيع استعلامات">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-bold text-teal-700 bg-teal-50 border border-teal-200 px-2.5 py-1 rounded-lg flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span> DB-302
+                        </span>
+                        <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg group-hover:bg-teal-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-teal-700 transition">أساسيات قواعد البيانات</h3>
+                    <p class="text-xs text-slate-400 font-medium mb-3" dir="ltr">Database Fundamentals</p>
+
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        تصميم النماذج العلائقية (ERD)، كتابة استعلامات SQL المتقدمة، معايير التطبيع (Normalization)، وإدارة البيانات بكفاءة.
+                    </p>
+
+                    <div class="flex flex-wrap gap-1.5 mb-2">
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">SQL Queries & CRUD</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">تصميم ERD والجداول</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Normalization</span>
+                    </div>
+                </div>
+
+                <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+                    <span class="text-xs text-teal-600 font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-circle-check text-[10px]"></i> منصة تفاعلية
+                    </span>
+                    <a href="https://saadalam-077.github.io/database-course/" target="_blank" rel="noopener noreferrer"
+                       class="text-xs sm:text-sm font-bold text-white bg-teal-600 hover:bg-teal-700 px-3.5 py-2 rounded-xl transition shadow-sm flex items-center gap-1.5">
+                        <span>دخول المقرر</span>
+                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Course 6: تفاعل الإنسان والحاسب -->
+            <div class="course-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden group hover:border-rose-500" data-category="data" data-keywords="تفاعل الانسان والحاسب hci human computer interaction ui ux تجربة المستخدم واجهات">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-bold text-rose-700 bg-rose-50 border border-rose-200 px-2.5 py-1 rounded-lg flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span> HCI-303
+                        </span>
+                        <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-lg group-hover:bg-rose-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-hand-pointer"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-rose-700 transition">تفاعل الإنسان والحاسب</h3>
+                    <p class="text-xs text-slate-400 font-medium mb-3" dir="ltr">Human-Computer Interaction (HCI)</p>
+
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        مبادئ تصميم واجهات المستخدم، علم النفس الإدراكي في تجربة المستخدم (UX)، والتقييم الاستدلالي وسهولة الاستخدام.
+                    </p>
+
+                    <div class="flex flex-wrap gap-1.5 mb-2">
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">مبادئ UI / UX</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Heuristic Evaluation</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">اختبارات الاستخدام</span>
+                    </div>
+                </div>
+
+                <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between">
+                    <span class="text-xs text-rose-600 font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-circle-check text-[10px]"></i> منصة تفاعلية
+                    </span>
+                    <a href="https://saadalam-077.github.io/hci/" target="_blank" rel="noopener noreferrer"
+                       class="text-xs sm:text-sm font-bold text-white bg-rose-600 hover:bg-rose-700 px-3.5 py-2 rounded-xl transition shadow-sm flex items-center gap-1.5">
+                        <span>دخول المقرر</span>
+                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Course 7: موضوعات متقدمة في الشبكات -->
+            <div class="course-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden group hover:border-emerald-500 ring-2 ring-emerald-500/20" data-category="systems" data-keywords="موضوعات متقدمة في الشبكات advanced topics in networks sdn nfv 5g core zero trust spine leaf srv6 شبكات">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-bold text-emerald-800 bg-emerald-100 border border-emerald-300 px-2.5 py-1 rounded-lg flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> NET-401
+                        </span>
+                        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg group-hover:bg-emerald-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                    </div>
+
+                    <h3 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-emerald-700 transition">موضوعات متقدمة في الشبكات</h3>
+                    <p class="text-xs text-slate-400 font-medium mb-3" dir="ltr">Advanced Topics in Networks</p>
+
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        دراسة هندسة الشبكات الحديثة: SDN و OpenFlow، شبكات 5G Core و MEC، بنية Zero Trust الأمنية، وتقنيات SRv6 الحديثة.
+                    </p>
+
+                    <div class="flex flex-wrap gap-1.5 mb-2">
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">SDN & OpenFlow</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">5G Core & Zero Trust</span>
+                        <span class="text-[11px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-md">Segment Routing SRv6</span>
+                    </div>
+                </div>
+
+                <div class="px-6 py-4 bg-emerald-50/60 border-t border-emerald-100 flex items-center justify-between">
+                    <span class="text-xs text-emerald-700 font-bold flex items-center gap-1">
+                        <i class="fa-solid fa-star text-amber-500"></i> أحدث المقررات المضافة
+                    </span>
+                    <a href="https://saadalam-077.github.io/adv-networks/" target="_blank" rel="noopener noreferrer"
+                       class="text-xs sm:text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 px-3.5 py-2 rounded-xl transition shadow-sm flex items-center gap-1.5">
+                        <span>دخول المقرر</span>
+                        <i class="fa-solid fa-arrow-left text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- No Results Fallback -->
+        <div id="noResults" class="hidden text-center py-16 bg-white rounded-2xl border border-slate-200 my-6">
+            <i class="fa-solid fa-folder-open text-4xl text-slate-300 mb-3"></i>
+            <h4 class="text-lg font-bold text-slate-800 mb-1">لم يتم العثور على أي مقرر مطابق</h4>
+            <p class="text-sm text-slate-500">يرجى تجربة البحث بكلمات أخرى أو إعادة تعيين عامل التصفية.</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 text-center text-sm mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-4 text-xs">
+                <p>جميع الحقوق محفوظة © المحاضر /سعد بن صالح العمري - جامعة الطائف</p>
+                <div class="flex items-center gap-4">
+                    <a href="https://t.me/saadsa85" target="_blank" rel="noopener noreferrer" class="hover:text-sky-400 transition flex items-center gap-1">
+                        <i class="fa-brands fa-telegram"></i> @saadsa85
+                    </a>
+                    <a href="mailto:saad_1406@hotmail.com" class="hover:text-emerald-400 transition flex items-center gap-1">
+                        <i class="fa-solid fa-envelope"></i> البريد الأكاديمي: <span dir="ltr">saad_1406@hotmail.com</span>
+                    </a>
+                </div>
+            </div>
+            <p class="text-[11px] text-slate-500">مستضاف عبر منصة GitHub Pages | صُممت البوابة لدعم التعليم الجامعي التفاعلي</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Filtering & Search Logic -->
+    <script>
+        let currentCategory = 'all';
+        const searchInput = document.getElementById('searchInput');
+        const courseCards = document.querySelectorAll('.course-card');
+        const noResults = document.getElementById('noResults');
+        const courseCount = document.getElementById('courseCount');
+
+        function filterCategory(cat) {
+            currentCategory = cat;
+            // Update active button styling
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                if (btn.dataset.cat === cat) {
+                    btn.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+                    btn.classList.add('bg-slate-900', 'text-white');
+                } else {
+                    btn.classList.remove('bg-slate-900', 'text-white');
+                    btn.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+                }
+            });
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const term = (searchInput ? searchInput.value.trim().toLowerCase() : '');
+            let visibleCount = 0;
+
+            courseCards.forEach(card => {
+                const category = card.dataset.category;
+                const keywords = (card.dataset.keywords || '').toLowerCase();
+                const cardText = card.innerText.toLowerCase();
+
+                const matchesCategory = (currentCategory === 'all' || category === currentCategory);
+                const matchesSearch = term === '' || keywords.includes(term) || cardText.includes(term);
+
+                if (matchesCategory && matchesSearch) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (courseCount) courseCount.innerText = visibleCount;
+            if (noResults) {
+                if (visibleCount === 0) {
+                    noResults.classList.remove('hidden');
+                } else {
+                    noResults.classList.add('hidden');
+                }
+            }
+        }
+
+        if (searchInput) {
+            searchInput.addEventListener('input', applyFilters);
+        }
+    </script>
+</body>
+</html>
